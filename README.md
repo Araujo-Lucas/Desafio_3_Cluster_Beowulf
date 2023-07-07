@@ -6,6 +6,8 @@ Trabalho desenvolvido por:
 - Maria Fernanda Pinto da Fonseca
 - Lucas de Araújo Santos Oliveira
 
+## Instruções de instalação/compilação/execução da interface
+
 1. Criação das máquinas virtuais no Virtual Box.
 2. Estabelecimento da conexão entre as máquinas.
 3. Instalação do software WinSCP na máquina local.

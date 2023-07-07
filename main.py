@@ -54,7 +54,7 @@ def copiar_diretorio(origem, destino):
 
 def renomear_mover_arquivo(nome_atual, novo_nome):
     """
-    Método responsável por renomear e/ou mover um arquivo. Caso o usuário apenas deseje renomear o arquivo, só é preciso informar o nome atual e o novo nome desejado para o arquivo. Se quiser também executar a funcionalidade de mover o arquivo, o usuário deve incluir o caminho de destino do arquivo junto com o novo nome ou com o mesmo nome anterior.
+    Método responsável por renomear e/ou mover um arquivo. Caso o usuário apenas deseje renomear o arquivo, só é preciso informar o nome atual e o novo nome desejado para o arquivo. Se quiser também executar a funcionalidade de mover o arquivo, o usuário deve incluir o caminho de origem, que inclui o nome atual do arquivo, e o caminho de destino. Caso o usuário queira renomear o arquivo junto com a ação de mover ele deve incluir o novo nome no caminho de destino.
     """
     subprocess.check_output(f'ssh node1 "mv {nome_atual} {novo_nome}"', shell=True)
     subprocess.check_output(f'ssh node2 "mv {nome_atual} {novo_nome}"', shell=True)
